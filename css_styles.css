@@ -1,17 +1,25 @@
 /* Base Styling */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif; /* Consistent font applied globally */
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, #74c0fc, #4dabf7);
+  background: #add8e6; /* Light blue background */
   color: #023e8a;
+
+  /* Centering the layout */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height for centering */
 }
 
+/* Menu Bar */
 .menu-bar {
   display: flex;
   justify-content: center;
   background: #0077b6;
   padding: 10px;
+  border-radius: 8px; /* Rounded corners for the menu bar */
 }
 
 .menu-bar a {
@@ -19,7 +27,7 @@ body {
   padding: 10px 20px;
   text-decoration: none;
   font-size: 18px;
-  border-radius: 4px;
+  border-radius: 8px; /* Rounded links */
   margin: 0 10px;
 }
 
@@ -27,12 +35,13 @@ body {
   background: #48cae4;
 }
 
+/* Container styling */
 .container {
   width: 90%;
-  margin: 20px auto;
+  max-width: 800px; /* Limit width for better design */
   background: rgba(255, 255, 255, 0.9);
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 12px; /* Rounded corners for the container */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -43,20 +52,35 @@ body {
   text-align: center;
 }
 
+/* Input fields with rounded corners */
 input[type="text"], input[type="number"] {
   padding: 8px;
   border: 1px solid #ccc;
   margin-right: 10px;
+  border-radius: 8px; /* Rounded input fields */
+  font-family: 'Arial', sans-serif; /* Ensure consistent font */
 }
 
+/* Buttons with rounded corners */
 button {
   background: #0077b6;
   color: white;
+  border: none;
+  border-radius: 8px; /* Rounded corners for buttons */
+  padding: 10px 20px;
+  font-family: 'Arial', sans-serif; /* Consistent font */
+  cursor: pointer;
 }
 
+button:hover {
+  background: #48cae4;
+}
+
+/* Canvas with rounded border */
 canvas {
   width: 100% !important;
   height: auto !important;
   max-height: 400px;
   border: 1px solid #ccc;
+  border-radius: 12px; /* Rounded border for canvas */
 }
